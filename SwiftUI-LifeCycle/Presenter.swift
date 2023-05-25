@@ -11,15 +11,16 @@ import Combine
 
 // ViewでStateを監視しているけど、View以外のClassでViewを起点にStateを更新した場合、Stateを更新するとそのViewも更新されるのでViewに戻る
 // onDisappearでStateを操作しない、そのStateを見ているViewに戻ってしまう
+
 @MainActor
 class DataPresenter {
     
     var state: StateValue
-    var interactor: DataInteractorImpl
-    var router: Router
+    var interactor: DataInteractorProtocol
+    var router: Router = Router()
     
     init(state: StateValue,
-         interactor: DataInteractorImpl,
+         interactor: DataInteractorProtocol,
          roter: Router) {
         self.state = state
         self.interactor = interactor

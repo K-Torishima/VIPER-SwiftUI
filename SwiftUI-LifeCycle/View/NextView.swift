@@ -23,7 +23,7 @@ struct NextView: View {
             List {
                 ForEach(presenter.state.todos) { todo in
                     NavigationLink {
-                        presenter.router.makeDetailView(todo: todo)
+                        presenter.gotoDetail(todo: todo)
                     } label: {
                         Text(todo.title)
                     }

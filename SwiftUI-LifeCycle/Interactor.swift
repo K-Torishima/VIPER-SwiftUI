@@ -49,7 +49,7 @@ final class MockDataInteractorImpl: DataInteractorProtocol {
     }
 
     private func mockData() async throws -> [Todo] {
-        [Todo(userId: 1, id: 1, title: "one", completed: false),
-         Todo(userId: 1, id: 1, title: "one", completed: false)]
+        [Todo(userId: 1, id: 1, title: "MockTodo1", completed: false),
+         Todo(userId: 2, id: 2, title: "MockTodo1", completed: false)]
     }
 }

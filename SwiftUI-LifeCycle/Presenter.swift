@@ -20,11 +20,9 @@ class DataPresenter {
     var router: Router = Router()
     
     init(state: StateValue,
-         interactor: DataInteractorProtocol,
-         roter: Router) {
+         interactor: DataInteractorProtocol) {
         self.state = state
         self.interactor = interactor
-        self.router = roter
     }
     
     func onAppear() {

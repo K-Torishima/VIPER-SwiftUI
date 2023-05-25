@@ -20,17 +20,21 @@ struct ContentView: View {
                         NextView(
                             presenter: DataPresenter(
                                 state: state,
-                                interactor: DataInteractorImpl(),
-                                roter: Router()
+                                interactor: DataInteractorImpl()
                             )
                         )
                     } label: {
                         Text("次の画面を表示")
                     }
                     NavigationLink {
-                        EmptyView()
+                        NextView(
+                            presenter: DataPresenter(
+                                state: state,
+                                interactor: MockDataInteractorImpl()
+                            )
+                        )
                     } label: {
-                        Text("EmptyView")
+                        Text("モックデータを差し込む")
                     }
                 }
             }

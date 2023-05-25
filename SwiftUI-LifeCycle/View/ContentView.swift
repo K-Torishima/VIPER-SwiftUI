@@ -18,7 +18,6 @@ struct ContentView: View {
                 List {
                     NavigationLink {
                         NextView(
-                            state: state,
                             presenter: DataPresenter(
                                 state: state,
                                 interactor: DataInteractorImpl(),
@@ -29,13 +28,9 @@ struct ContentView: View {
                         Text("次の画面を表示")
                     }
                     NavigationLink {
-//                        NextView(
-//                            presenter: DataPresenter(
-//                                interactor: MockDataInteractorImpl()
-//                            )
-//                        )
+                        EmptyView()
                     } label: {
-                        Text("テスト画面を表示")
+                        Text("EmptyView")
                     }
                 }
             }

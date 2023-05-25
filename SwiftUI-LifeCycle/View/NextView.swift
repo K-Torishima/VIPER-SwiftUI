@@ -9,12 +9,9 @@ import SwiftUI
 
 struct NextView: View {
     
-    @ObservedObject var state: StateValue
     let presenter: DataPresenter
     
-    init(state: StateValue,
-         presenter: DataPresenter) {
-        self.state = state
+    init(presenter: DataPresenter) {
         self.presenter = presenter
     }
     
@@ -26,8 +23,7 @@ struct NextView: View {
             List {
                 ForEach(presenter.state.todos) { todo in
                     NavigationLink {
-                        DetailView(todo: todo)
-                        //presenter.router.makeDetailView(todo: todo)
+                        presenter.router.makeDetailView(todo: todo)
                     } label: {
                         Text(todo.title)
                     }

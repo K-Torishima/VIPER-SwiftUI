@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
-
-// Router を実装してみる
-
+ 
 final class Router {
     
     func makeDetailView(todo: Todo) -> some View {
         let detail = DetailView(todo: todo)
         return detail
+    }
+    
+    @ViewBuilder
+    func makeHogeView() -> some View {
+        VStack {
+            Text("hello")
+        }
     }
 }

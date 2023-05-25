@@ -13,7 +13,6 @@ enum APIError {
     case noResponse
 }
 
-
 protocol DataInteractorProtocol {
     func getdata() async throws -> [Todo]
 }

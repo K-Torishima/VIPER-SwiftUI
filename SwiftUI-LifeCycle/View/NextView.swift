@@ -21,11 +21,20 @@ struct NextView: View {
             Text("todoの数: \(presenter.state.todos.count)")
             Spacer()
             List {
-                ForEach(presenter.state.todos) { todo in
+                Section {
                     NavigationLink {
-                        presenter.gotoDetail(todo: todo)
+                        presenter.goToHogeView()
                     } label: {
-                        Text(todo.title)
+                        Text("hoge")
+                    }
+                }
+                Section {
+                    ForEach(presenter.state.todos) { todo in
+                        NavigationLink {
+                            presenter.goToDetail(todo: todo)
+                        } label: {
+                            Text(todo.title)
+                        }
                     }
                 }
             }

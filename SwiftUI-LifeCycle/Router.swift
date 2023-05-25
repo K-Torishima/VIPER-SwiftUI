@@ -7,10 +7,12 @@
 
 import SwiftUI
  
+@MainActor
 final class Router {
     
     func makeDetailView(todo: Todo) -> some View {
-        let detail = DetailView(todo: todo)
+        let presenter = DetailPresener(interactor: MockDataInteractorImpl())
+        let detail = DetailView(todo: todo, presenter: presenter)
         return detail
     }
     

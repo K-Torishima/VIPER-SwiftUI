@@ -17,7 +17,7 @@ class DataPresenter {
     
     var state: StateValue
     var interactor: DataInteractorProtocol
-    var router: Router = Router()
+    private let router: Router = Router()
     
     init(state: StateValue,
          interactor: DataInteractorProtocol) {
@@ -38,8 +38,12 @@ class DataPresenter {
         print("presenter onDisappear")
     }
     
-    func gotoDetail(todo: Todo) -> some View {
+    func goToDetail(todo: Todo) -> some View {
         router.makeDetailView(todo: todo)
+    }
+    
+    func goToHogeView() -> some View {
+        router.makeHogeView()
     }
     
     private func load() async throws {

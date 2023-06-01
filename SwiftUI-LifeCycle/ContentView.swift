@@ -23,7 +23,7 @@ struct ContentView: View {
                             )
                         )
                     } label: {
-                        Text("次の画面を表示")
+                        Text("TodoListへ")
                     }
                     NavigationLink {
                         TodoListView(
@@ -34,12 +34,12 @@ struct ContentView: View {
                             )
                         )
                     } label: {
-                        Text("モックデータを差し込む")
+                        Text("モックデータ")
                     }
                 }
             }
-            .navigationTitle("画面１")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("画面1")
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

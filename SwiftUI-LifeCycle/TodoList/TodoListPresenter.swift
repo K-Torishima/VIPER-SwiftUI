@@ -37,12 +37,14 @@ class TodoListPresenter: TodoListPresenterProtocol {
     
     private func load() async throws {
         state.todos = []
-        state.loadingState = .loading
+        // state.loadingState = .loading
+        state.progressIsHidden = false
         do {
             try await Task.sleep(nanoseconds: 1 * NSEC_PER_SEC)
             let datas = try await interactor.getdata()
             state.todos = datas
-            state.loadingState = .complete
+            // state.loadingState = .complete
+            state.progressIsHidden = true
         } catch {
             print(error)
         }

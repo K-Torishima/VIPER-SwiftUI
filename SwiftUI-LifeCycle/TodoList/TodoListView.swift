@@ -24,9 +24,6 @@ struct TodoListView: View {
     
     var body: some View {
         VStack {
-            Text(state.loadingState.message)
-            Text("todoの数: \(state.todos.count)")
-            Spacer()
             List {
                 Section {
                     NavigationLink {
@@ -61,5 +58,27 @@ struct TodoListView: View {
         .onDisappear {
             dependency.presenter.onDisappear()
         }
+        .overlay {
+            ProgressView()
+                .progressViewStyle(.circular)
+                .padding()
+                .tint(Color.white)
+                .background(Color.gray)
+                .cornerRadius(8)
+                .scaleEffect(1.2)
+                .isHidden(state.progressIsHidden)
+        }
+        .navigationTitle("Todos")
     }
 }
+
+extension View {
+    @ViewBuilder func isHidden(_ isHidden: Bool) -> some View {
+        if isHidden {
+            self.hidden()
+        } else {
+            self
+        }
+    }
+}
+

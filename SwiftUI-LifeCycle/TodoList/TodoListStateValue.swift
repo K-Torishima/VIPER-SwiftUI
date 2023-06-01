@@ -26,6 +26,7 @@ enum LoadActionState: String {
 
 class TodoListStateValue: ObservableObject {
     @Published var loadingState: LoadActionState = .initial
+    @Published var progressIsHidden: Bool = true
     @Published var todos: [Todo] = []
     
     init() {}

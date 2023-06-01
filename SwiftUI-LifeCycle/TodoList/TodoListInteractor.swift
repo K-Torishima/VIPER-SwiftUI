@@ -13,11 +13,7 @@ enum APIError {
     case noResponse
 }
 
-protocol DataInteractorProtocol {
-    func getdata() async throws -> [Todo]
-}
-
-final class DataInteractorImpl: DataInteractorProtocol {
+final class TodoListInteractor: TodoListInteractorProtocol {
     
     let url: URL
     
@@ -37,7 +33,7 @@ final class DataInteractorImpl: DataInteractorProtocol {
     }
 }
 
-final class MockDataInteractorImpl: DataInteractorProtocol {
+final class MockTodoListInteractor: TodoListInteractorProtocol {
     
     func getdata() async throws -> [Todo] {
         do {

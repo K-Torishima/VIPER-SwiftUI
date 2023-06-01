@@ -24,7 +24,7 @@ enum LoadActionState: String {
     }
 }
 
-class StateValue: ObservableObject {
+class TodoListStateValue: ObservableObject {
     @Published var loadingState: LoadActionState = .initial
     @Published var todos: [Todo] = []
     

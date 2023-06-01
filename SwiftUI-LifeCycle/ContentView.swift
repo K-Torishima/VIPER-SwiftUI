@@ -10,27 +10,27 @@ import Combine
 
 struct ContentView: View {
     
-    @ObservedObject var state = StateValue()
-    
     var body: some View {
         NavigationView {
             VStack {
                 List {
                     NavigationLink {
-                        NextView(
-                            presenter: DataPresenter(
-                                state: state,
-                                interactor: DataInteractorImpl()
+                        TodoListView(
+                            dependency: .init(
+                                presenter: TodoListPresenter(
+                                    interactor: TodoListInteractor()
+                                )
                             )
                         )
                     } label: {
                         Text("次の画面を表示")
                     }
                     NavigationLink {
-                        NextView(
-                            presenter: DataPresenter(
-                                state: state,
-                                interactor: MockDataInteractorImpl()
+                        TodoListView(
+                            dependency: .init(
+                                presenter: TodoListPresenter(
+                                    interactor: TodoListInteractor()
+                                )
                             )
                         )
                     } label: {

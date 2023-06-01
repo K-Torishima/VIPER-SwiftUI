@@ -13,15 +13,12 @@ import Combine
 // onDisappearでStateを操作しない、そのStateを見ているViewに戻ってしまう
 
 @MainActor
-class DataPresenter {
+class TodoListPresenter: TodoListPresenterProtocol {
     
-    var state: StateValue
-    var interactor: DataInteractorProtocol
-    private let router: Router = Router()
-    
-    init(state: StateValue,
-         interactor: DataInteractorProtocol) {
-        self.state = state
+    let state: TodoListStateValue = TodoListStateValue()
+    private let interactor: TodoListInteractorProtocol
+
+    init(interactor: TodoListInteractorProtocol) {
         self.interactor = interactor
     }
     
@@ -36,14 +33,6 @@ class DataPresenter {
     
     func onDisappear() {
         print("presenter onDisappear")
-    }
-    
-    func goToDetail(todo: Todo) -> some View {
-        router.makeDetailView(todo: todo)
-    }
-    
-    func goToHogeView() -> some View {
-        router.makeHogeView()
     }
     
     private func load() async throws {

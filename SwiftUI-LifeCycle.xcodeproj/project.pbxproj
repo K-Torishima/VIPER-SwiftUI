@@ -17,9 +17,14 @@
 		930F85452A1DF33400B629C0 /* TodoListStateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F85442A1DF33400B629C0 /* TodoListStateValue.swift */; };
 		930F85472A1E1C2B00B629C0 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F85462A1E1C2B00B629C0 /* TodoListView.swift */; };
 		930F85692A1F56AC00B629C0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F85682A1F56AC00B629C0 /* DetailView.swift */; };
+		9376ADA72A2F32F300663830 /* Screen1PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376ADA62A2F32F300663830 /* Screen1PresenterProtocol.swift */; };
+		9376ADA92A2F334600663830 /* Screen1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376ADA82A2F334600663830 /* Screen1Presenter.swift */; };
+		9376ADAB2A2F345000663830 /* Screen1StateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376ADAA2A2F345000663830 /* Screen1StateValue.swift */; };
+		9376ADAD2A2F34FA00663830 /* Screen1RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376ADAC2A2F34FA00663830 /* Screen1RouterProtocol.swift */; };
+		9376ADAF2A2F350E00663830 /* Screen1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376ADAE2A2F350E00663830 /* Screen1Router.swift */; };
 		93ADE7232A28A87300EE1C36 /* TodoListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADE7222A28A87300EE1C36 /* TodoListPresenterProtocol.swift */; };
 		93ADE7252A28A88900EE1C36 /* TodoListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADE7242A28A88900EE1C36 /* TodoListInteractorProtocol.swift */; };
-		93CF27C72A2DA4BE009659F1 /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF27C62A2DA4BE009659F1 /* Screen1.swift */; };
+		93CF27C72A2DA4BE009659F1 /* Screen1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF27C62A2DA4BE009659F1 /* Screen1View.swift */; };
 		93CF27C92A2DB945009659F1 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF27C82A2DB945009659F1 /* NavigationModifier.swift */; };
 		93CF27CB2A2F2292009659F1 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF27CA2A2F2292009659F1 /* Screen2.swift */; };
 		93CF27CD2A2F229C009659F1 /* Screen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF27CC2A2F229C009659F1 /* Screen3.swift */; };
@@ -40,9 +45,14 @@
 		930F85442A1DF33400B629C0 /* TodoListStateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListStateValue.swift; sourceTree = "<group>"; };
 		930F85462A1E1C2B00B629C0 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		930F85682A1F56AC00B629C0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		9376ADA62A2F32F300663830 /* Screen1PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1PresenterProtocol.swift; sourceTree = "<group>"; };
+		9376ADA82A2F334600663830 /* Screen1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Presenter.swift; sourceTree = "<group>"; };
+		9376ADAA2A2F345000663830 /* Screen1StateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1StateValue.swift; sourceTree = "<group>"; };
+		9376ADAC2A2F34FA00663830 /* Screen1RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1RouterProtocol.swift; sourceTree = "<group>"; };
+		9376ADAE2A2F350E00663830 /* Screen1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1Router.swift; sourceTree = "<group>"; };
 		93ADE7222A28A87300EE1C36 /* TodoListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenterProtocol.swift; sourceTree = "<group>"; };
 		93ADE7242A28A88900EE1C36 /* TodoListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractorProtocol.swift; sourceTree = "<group>"; };
-		93CF27C62A2DA4BE009659F1 /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
+		93CF27C62A2DA4BE009659F1 /* Screen1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1View.swift; sourceTree = "<group>"; };
 		93CF27C82A2DB945009659F1 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		93CF27CA2A2F2292009659F1 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
 		93CF27CC2A2F229C009659F1 /* Screen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3.swift; sourceTree = "<group>"; };
@@ -110,6 +120,19 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		9376ADA52A2F32B800663830 /* Screen1 */ = {
+			isa = PBXGroup;
+			children = (
+				93CF27C62A2DA4BE009659F1 /* Screen1View.swift */,
+				9376ADA62A2F32F300663830 /* Screen1PresenterProtocol.swift */,
+				9376ADA82A2F334600663830 /* Screen1Presenter.swift */,
+				9376ADAA2A2F345000663830 /* Screen1StateValue.swift */,
+				9376ADAC2A2F34FA00663830 /* Screen1RouterProtocol.swift */,
+				9376ADAE2A2F350E00663830 /* Screen1Router.swift */,
+			);
+			path = Screen1;
+			sourceTree = "<group>";
+		};
 		93ADE7262A28AEAF00EE1C36 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				930F85322A1C6BF900B629C0 /* RootView.swift */,
-				93CF27C62A2DA4BE009659F1 /* Screen1.swift */,
+				9376ADA52A2F32B800663830 /* Screen1 */,
 				93CF27CA2A2F2292009659F1 /* Screen2.swift */,
 				93CF27CC2A2F229C009659F1 /* Screen3.swift */,
 				93CF27CE2A2F22A6009659F1 /* Screen4.swift */,
@@ -210,17 +233,22 @@
 				930F85332A1C6BF900B629C0 /* RootView.swift in Sources */,
 				930F85432A1CFF1800B629C0 /* Entitys.swift in Sources */,
 				930F85692A1F56AC00B629C0 /* DetailView.swift in Sources */,
-				93CF27C72A2DA4BE009659F1 /* Screen1.swift in Sources */,
+				93CF27C72A2DA4BE009659F1 /* Screen1View.swift in Sources */,
 				93CF27D42A2F23B5009659F1 /* ChildViews.swift in Sources */,
 				93ADE7252A28A88900EE1C36 /* TodoListInteractorProtocol.swift in Sources */,
+				9376ADA92A2F334600663830 /* Screen1Presenter.swift in Sources */,
 				93CF27CD2A2F229C009659F1 /* Screen3.swift in Sources */,
+				9376ADAB2A2F345000663830 /* Screen1StateValue.swift in Sources */,
+				9376ADAF2A2F350E00663830 /* Screen1Router.swift in Sources */,
 				93ADE7232A28A87300EE1C36 /* TodoListPresenterProtocol.swift in Sources */,
 				93CF27D22A2F2304009659F1 /* Route.swift in Sources */,
+				9376ADA72A2F32F300663830 /* Screen1PresenterProtocol.swift in Sources */,
 				930F85452A1DF33400B629C0 /* TodoListStateValue.swift in Sources */,
 				930F85312A1C6BF900B629C0 /* SwiftUI_LifeCycleApp.swift in Sources */,
 				93CF27CB2A2F2292009659F1 /* Screen2.swift in Sources */,
 				93CF27CF2A2F22A6009659F1 /* Screen4.swift in Sources */,
 				93CF27C92A2DB945009659F1 /* NavigationModifier.swift in Sources */,
+				9376ADAD2A2F34FA00663830 /* Screen1RouterProtocol.swift in Sources */,
 				930F85412A1CFED300B629C0 /* TodoListInteractor.swift in Sources */,
 				930F853F2A1C709700B629C0 /* TodoListPresenter.swift in Sources */,
 			);

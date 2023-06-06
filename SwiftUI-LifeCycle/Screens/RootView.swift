@@ -13,7 +13,7 @@ struct RootView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Screen1()
+            Screen1View(dependency: .init(presenter: Screen1Presenter(router: Screen1Router())))
                 .tabItem {
                     Image(systemName: "1.circle")
                     Text("screen1")

@@ -1,17 +1,16 @@
 //
-//  ContentView.swift
+//  SampleScreens.swift
 //  SwiftUI-LifeCycle
 //
-//  Created by 鳥嶋 晃次 on 2023/05/23.
+//  Created by 鳥嶋 晃次 on 2023/06/05.
 //
 
 import SwiftUI
-import Combine
 
-struct ContentView: View {
+struct Screen1: View {
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 List {
                     NavigationLink {
@@ -29,7 +28,7 @@ struct ContentView: View {
                         TodoListView(
                             dependency: .init(
                                 presenter: TodoListPresenter(
-                                    interactor: TodoListInteractor()
+                                    interactor: MockTodoListInteractor()
                                 )
                             )
                         )
@@ -38,14 +37,8 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("画面1")
+            .navigationTitle("Screen1")
             .navigationBarTitleDisplayMode(.large)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

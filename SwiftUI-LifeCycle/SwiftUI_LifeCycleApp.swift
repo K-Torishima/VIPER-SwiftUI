@@ -7,11 +7,22 @@
 
 import SwiftUI
 
+class RouteEnvironment: ObservableObject {
+    // 全体のパスではなくタブごとにパスを作る
+    @Published var screen1Path: [Route] = []
+    @Published var screen2Path: [Route] = []
+}
+
 @main
 struct SwiftUI_LifeCycleApp: App {
+    
+    @ObservedObject var routeEnvironment: RouteEnvironment = .init()
+    @ObservedObject var screen4NavigationPath: Screen4NavigationPath = .init()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(routeEnvironment)
+                .environmentObject(screen4NavigationPath)
         }
     }
 }

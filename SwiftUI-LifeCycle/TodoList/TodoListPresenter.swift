@@ -42,6 +42,7 @@ class TodoListPresenter: TodoListPresenterProtocol {
         do {
             try await Task.sleep(nanoseconds: 1 * NSEC_PER_SEC)
             let datas = try await interactor.getdata()
+            print("datas count: ", datas.count)
             state.todos = datas
             // state.loadingState = .complete
             state.progressIsHidden = true
